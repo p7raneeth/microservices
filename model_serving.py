@@ -18,6 +18,6 @@ async def predict_species(iris: IrisSpecies):
     prediction = loaded_model.predict(data_in)
     probability = loaded_model.predict_proba(data_in).max()
     return {
-    'prediction': prediction[0],
+    'prediction for the input args': prediction[0],
     'probability': probability
     }
